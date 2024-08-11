@@ -160,7 +160,7 @@ The names of the two columns must be exactly 'Questions' and 'manually_tagged'.
 
         # Input for start and end rows
         start_row = st.number_input("Start Row (0-indexed)", min_value=0, value=0, step=1)
-        end_row = st.number_input("End Row (0-indexed)", min_value=0, value=10, step=1)
+        end_row = st.number_input("End Row (0-indexed)", min_value=0, value=5, step=1)
 
         if st.button("Classify and Evaluate"):
             # Process the file and get accuracy
