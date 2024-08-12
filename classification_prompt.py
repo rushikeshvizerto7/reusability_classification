@@ -173,7 +173,6 @@ The names of the two columns must be exactly 'Questions' and 'manually_tagged'.
                 st.session_state['accuracy'] = accuracy
                 st.session_state['df_classified'] = df_classified
 
-    # Display the results only if they exist in session state
     if 'accuracy' in st.session_state:
         st.write(f"Accuracy of Classification (Reusability - Y,N) :  **{st.session_state['accuracy'] * 100:.2f}%**")
 
